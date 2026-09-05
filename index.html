@@ -1,167 +1,1186 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-  <title>Hammad Ahmad Ghalib | Software Engineering Student & Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+    <meta
+        name="description"
+        content="Hamad Ahmad Ghalib — Software Engineering Student and Web Developer. Explore my projects, skills and experience."
+    >
+
+    <meta
+        name="keywords"
+        content="Hamad Ahmad Ghalib, Web Developer, Software Engineer, Portfolio, HTML, CSS, JavaScript, C++"
+    >
+
+    <meta name="author" content="Hamad Ahmad Ghalib">
+
+    <title>Hamad Ahmad Ghalib | Web Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ==================== HERO SECTION ==================== -->
-<header class="hero">
+    <!-- =========================
+         CURSOR GLOW
+    ========================== -->
+    <div class="cursor-glow"></div>
 
-  <!-- PROFILE IMAGE -->
-  <div class="profile">
-    <img src="images/hammad.jpg" alt="Hammad Ahmad Ghalib">
-  </div>
 
-  <h1>Hammad Ahmad Ghalib</h1>
+    <!-- =========================
+         SCROLL PROGRESS
+    ========================== -->
+    <div class="scroll-progress"></div>
 
-  <p>
-    Software Engineering Student | C++ & Web Developer
-  </p>
 
-  <div class="buttons">
-    <a href="https://github.com/hammadahmedghalib" target="_blank">
-      GitHub
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                <span>H</span>
+                <strong>Hamad</strong>
+            </a>
+
+            <nav class="nav-menu">
+
+                <a href="#home" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="#about" class="nav-link">
+                    About
+                </a>
+
+                <a href="#skills" class="nav-link">
+                    Skills
+                </a>
+
+                <a href="#projects" class="nav-link">
+                    Projects
+                </a>
+
+                <a href="#contact" class="nav-link">
+                    Contact
+                </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a
+                    href="https://github.com/hammadahmedghalib"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="github-btn"
+                >
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+
+                <button
+                    class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Toggle theme"
+                >
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-grid"></div>
+
+            <div class="hero-container">
+
+                <!-- LEFT -->
+                <div class="hero-content reveal">
+
+                    <div class="available-badge">
+                        <span class="status-dot"></span>
+                        Available for opportunities
+                    </div>
+
+                    <p class="hero-small">
+                        HELLO, I'M
+                    </p>
+
+                    <h1>
+                        Hamad
+                        <span>Ahmad</span>
+                        Ghalib
+                    </h1>
+
+                    <div class="hero-role">
+                        <span>I am a </span>
+                        <span id="typingText"></span>
+                        <span class="typing-cursor">|</span>
+                    </div>
+
+                    <p class="hero-description">
+                        I build modern, responsive and user-focused websites
+                        that combine clean design with practical functionality.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="primary-btn">
+                            View My Work
+                            <span>↗</span>
+                        </a>
+
+                        <a href="#contact" class="secondary-btn">
+                            Let's Talk
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+<div class="hero-socials">
+
+    <!-- GitHub -->
+    <a href="https://github.com/hammadahmedghalib"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="social-link"
+       aria-label="GitHub">
+        <i class="fab fa-github"></i>
     </a>
-  </div>
 
-</header>
+    <!-- Email -->
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=ha8137915@gmail.com&su=Portfolio%20Inquiry"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="social-link"
+   aria-label="Email">
+    <i class="fas fa-envelope"></i>
+</a>
 
-
-<!-- ==================== ABOUT SECTION ==================== -->
-<section class="card">
-
-  <h2>About Me</h2>
-
-  <p>
-    Software Engineering student at SZABIST Islamabad passionate about
-    building modern, responsive, and real-world web applications using
-    HTML, CSS, JavaScript, and C++.
-  </p>
-
-</section>
-
-
-<!-- ==================== SKILLS SECTION ==================== -->
-<section class="card">
-
-  <h2>Skills</h2>
-
-  <div class="skills">
-
-    <span>C++</span>
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>Responsive Web Design</span>
-    <span>Problem Solving</span>
-
-  </div>
-
-</section>
-
-
-<!-- ==================== PROJECTS SECTION ==================== -->
-<section class="card">
-
-  <h2>Projects</h2>
-
-
-  <!-- PROJECT 1 -->
-  <div class="project">
-
-    <h3>👗 Nooré LUXE</h3>
-
-    <p>
-      Luxury Fashion & E-Commerce Website — An elegant e-commerce
-      experience designed for showcasing premium Pakistani unstitched
-      and luxury 3-piece collections.
-    </p>
-
-    <a
-      href="https://hammadahmedghalib.github.io/Noor-e-boutique/"
-      target="_blank">
-      Live Demo
+    <!-- WhatsApp -->
+    <a href="https://wa.me/923199608782"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="social-link"
+       aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
     </a>
 
-  </div>
+</div>
+
+                </div>
 
 
-  <!-- PROJECT 2 -->
-  <div class="project">
+                <!-- RIGHT -->
+                <div class="hero-visual reveal">
 
-    <h3>🍽️ Dastarkhwan 804</h3>
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
 
-    <p>
-      Restaurant & Food Ordering Website — A modern restaurant web
-      experience designed to showcase the brand, menu, and food offerings
-      through a clean and engaging interface.
-    </p>
+                    <div class="profile-glow"></div>
 
-    <a
-      href="https://dastarkhwan-804.vercel.app/"
-      target="_blank">
-      Live Demo
-    </a>
+                    <div class="profile-card">
 
-  </div>
+                        <div class="profile-top">
 
+                            <span class="profile-label">
+                                DEVELOPER
+                            </span>
 
-  <!-- PROJECT 3 -->
-  <div class="project">
+                            <span class="profile-number">
+                                01
+                            </span>
 
-    <h3>🏥 Family Clinic</h3>
+                        </div>
 
-    <p>
-      Modern clinic website featuring an appointment booking system,
-      WhatsApp integration, responsive design, and an easy-to-use
-      interface for patients.
-    </p>
+                        <div class="profile-image-wrapper">
 
-    <a
-      href="https://hammadahmedghalib.github.io/family-clinic-website/"
-      target="_blank">
-      Live Demo
-    </a>
+                            <img
+                                src="images/hammad.jpg"
+                                alt="Hamad Ahmad Ghalib"
+                                class="profile-image"
+                            >
 
-  </div>
+                        </div>
 
-</section>
+                        <div class="profile-bottom">
 
+                            <div>
+                                <strong>Hamad Ahmad Ghalib</strong>
+                                <span>Software Engineering Student</span>
+                            </div>
 
-<!-- ==================== CONTACT SECTION ==================== -->
-<section class="card">
+                            <div class="profile-arrow">
+                                ↗
+                            </div>
 
-  <h2>Contact</h2>
+                        </div>
 
-  <p>
-    Email: hammadahmad2342@gmail.com
-  </p>
-
-  <p>
-    Phone: 0319-9608782
-  </p>
-
-</section>
+                    </div>
 
 
-<!-- ==================== FOOTER ==================== -->
-<footer>
+                    <!-- Floating badge -->
+                    <div class="floating-card floating-code">
 
-  <p>
-    © 2026 Hammad Ahmad Ghalib | Built with HTML & CSS
-  </p>
+                        <div class="floating-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
 
-</footer>
+                        <div>
+                            <strong>Clean Code</strong>
+                            <span>Built with purpose</span>
+                        </div>
 
+                    </div>
+
+
+                    <div class="floating-card floating-web">
+
+                        <div class="floating-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+
+                        <div>
+                            <strong>Web Developer</strong>
+                            <span>Responsive websites</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hero stats -->
+
+            <div class="hero-stats">
+
+                <div class="stat">
+                    <strong>03+</strong>
+                    <span>Projects</span>
+                </div>
+
+                <div class="stat">
+                    <strong>06+</strong>
+                    <span>Core Skills</span>
+                </div>
+
+                <div class="stat">
+                    <strong>100%</strong>
+                    <span>Passion</span>
+                </div>
+
+            </div>
+
+
+            <a href="#about" class="scroll-down">
+                <span>Scroll to explore</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section class="section about-section" id="about">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">
+                        01 / ABOUT
+                    </span>
+
+                    <h2>
+                        Turning ideas into
+                        <span>digital experiences.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-text reveal">
+
+                        <p class="large-text">
+                            I'm <strong>Hamad Ahmad Ghalib</strong>, a Software
+                            Engineering student at SZABIST Islamabad with a
+                            passion for building modern websites and solving
+                            real-world problems through technology.
+                        </p>
+
+                        <p>
+                            I enjoy transforming ideas into clean, responsive
+                            and interactive web experiences. My focus is on
+                            writing understandable code, creating attractive
+                            interfaces and continuously improving my technical
+                            skills.
+                        </p>
+
+                        <a href="#contact" class="text-link">
+                            Start a conversation
+                            <span>↗</span>
+                        </a>
+
+                    </div>
+
+
+                    <div class="about-info reveal">
+
+                        <div class="info-item">
+
+                            <span>Education</span>
+
+                            <strong>
+                                BS Software Engineering
+                            </strong>
+
+                            <small>
+                                SZABIST University Islamabad
+                            </small>
+
+                        </div>
+
+
+                        <div class="info-item">
+
+                            <span>Focus</span>
+
+                            <strong>
+                                Web Development
+                            </strong>
+
+                            <small>
+                                Frontend & Modern UI
+                            </small>
+
+                        </div>
+
+
+                        <div class="info-item">
+
+                            <span>Location</span>
+
+                            <strong>
+                                Islamabad, Pakistan
+                            </strong>
+
+                            <small>
+                                Open to opportunities
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
+        <section class="section skills-section" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">
+                        02 / SKILLS
+                    </span>
+
+                    <h2>
+                        Tools I use to
+                        <span>build things.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-number">01</div>
+
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+
+                        <h3>HTML</h3>
+
+                        <p>
+                            Semantic and structured web pages with clean,
+                            accessible markup.
+                        </p>
+
+                        <div class="skill-line"></div>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-number">02</div>
+
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+
+                        <h3>CSS</h3>
+
+                        <p>
+                            Responsive layouts, animations and modern visual
+                            interfaces.
+                        </p>
+
+                        <div class="skill-line"></div>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-number">03</div>
+
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+
+                        <h3>JavaScript</h3>
+
+                        <p>
+                            Interactive interfaces and dynamic browser
+                            functionality.
+                        </p>
+
+                        <div class="skill-line"></div>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-number">04</div>
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <h3>C++</h3>
+
+                        <p>
+                            Strong programming fundamentals, logic and
+                            problem-solving.
+                        </p>
+
+                        <div class="skill-line"></div>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-number">05</div>
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+
+                        <h3>Responsive Design</h3>
+
+                        <p>
+                            Websites designed to work smoothly across phones,
+                            tablets and desktops.
+                        </p>
+
+                        <div class="skill-line"></div>
+
+                    </div>
+
+
+                    <div class="skill-card reveal">
+
+                        <div class="skill-number">06</div>
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+
+                        <h3>Problem Solving</h3>
+
+                        <p>
+                            Breaking complex problems into simple and practical
+                            solutions.
+                        </p>
+
+                        <div class="skill-line"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
+        <section class="section projects-section" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading project-heading reveal">
+
+                    <span class="section-number">
+                        03 / PROJECTS
+                    </span>
+
+                    <h2>
+                        Things I've
+                        <span>built.</span>
+                    </h2>
+
+                    <p>
+                        A selection of websites and digital experiences I've
+                        created.
+                    </p>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- PROJECT 1 -->
+
+                    <article class="project-card project-large reveal">
+
+                        <div class="project-preview boutique-preview">
+
+                            <div class="browser-bar">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                                <small>
+                                    nooré-luxe.com
+                                </small>
+
+                            </div>
+
+                            <div class="preview-content">
+
+                                <span class="preview-label">
+                                    NOORÉ
+                                </span>
+
+                                <h3>
+                                    LUXE
+                                </h3>
+
+                                <p>
+                                    Luxury Fashion
+                                </p>
+
+                                <div class="preview-button">
+                                    Explore Collection
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-meta">
+
+                                <span>01</span>
+
+                                <span>
+                                    E-Commerce
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Nooré LUXE
+                            </h3>
+
+                            <p>
+                                A premium fashion and e-commerce website
+                                designed for Pakistani unstitched and luxury
+                                3-piece collections.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+                            <a
+                                href="https://hammadahmedghalib.github.io/Noor-e-boutique/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                View Live Project
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 2 -->
+
+                    <article class="project-card reveal">
+
+                        <div class="project-preview restaurant-preview">
+
+                            <div class="browser-bar">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                                <small>
+                                    dastarkhwan-804.vercel.app
+                                </small>
+
+                            </div>
+
+                            <div class="restaurant-content">
+
+                                <div class="restaurant-circle">
+                                    <i class="fa-solid fa-utensils"></i>
+                                </div>
+
+                                <span>
+                                    DASTARKHWAN
+                                </span>
+
+                                <strong>
+                                    804
+                                </strong>
+
+                                <small>
+                                    Taste • Tradition • Together
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-meta">
+
+                                <span>02</span>
+
+                                <span>
+                                    Restaurant
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Dastarkhwan 804
+                            </h3>
+
+                            <p>
+                                A modern restaurant and food ordering website
+                                focused on an engaging customer experience.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+                            <a
+                                href="https://dastarkhwan-804.vercel.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                View Live Project
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 3 -->
+
+                    <article class="project-card reveal">
+
+                        <div class="project-preview clinic-preview">
+
+                            <div class="browser-bar">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                                <small>
+                                    family-clinic
+                                </small>
+
+                            </div>
+
+                            <div class="clinic-content">
+
+                                <div class="clinic-logo">
+                                    +
+                                </div>
+
+                                <strong>
+                                    FAMILY
+                                </strong>
+
+                                <span>
+                                    CLINIC
+                                </span>
+
+                                <small>
+                                    Your health. Our priority.
+                                </small>
+
+                                <div class="clinic-button">
+                                    Book Appointment
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-meta">
+
+                                <span>03</span>
+
+                                <span>
+                                    Healthcare
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Family Clinic
+                            </h3>
+
+                            <p>
+                                A modern clinic website featuring appointment
+                                booking, WhatsApp integration and responsive
+                                design.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+                            <a
+                                href="https://hammadahmedghalib.github.io/family-clinic-website/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                View Live Project
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-wrapper">
+
+                    <div class="contact-intro reveal">
+
+                        <span class="section-number">
+                            04 / CONTACT
+                        </span>
+
+                        <h2>
+                            Have an idea?
+                            <span>Let's build it.</span>
+                        </h2>
+
+                        <p>
+                            Whether you have a project, an opportunity or just
+                            want to say hello, feel free to send me a message.
+                        </p>
+
+
+                        <div class="contact-details">
+
+                            <a
+                                href="mailto:ha8137915@gmail.com"
+                                class="contact-detail"
+                            >
+
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+
+                                <div>
+                                    <span>Email</span>
+                                    <strong>
+                                        ha8137915@gmail.com
+                                    </strong>
+                                </div>
+
+                            </a>
+
+
+                            <a
+                                href="tel:03199608782"
+                                class="contact-detail"
+                            >
+
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+
+                                <div>
+                                    <span>Phone</span>
+                                    <strong>
+                                        0319-9608782
+                                    </strong>
+                                </div>
+
+                            </a>
+
+
+                            <a
+                                href="https://github.com/hammadahmedghalib"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="contact-detail"
+                            >
+
+                                <div class="contact-icon">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+
+                                <div>
+                                    <span>GitHub</span>
+                                    <strong>
+                                        hammadahmedghalib
+                                    </strong>
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONTACT FORM -->
+
+                    <div class="contact-form-wrapper reveal">
+
+                        <div class="form-top">
+
+                            <span>
+                                SEND A MESSAGE
+                            </span>
+
+                            <span>
+                                ✦
+                            </span>
+
+                        </div>
+
+
+                        <!-- Formspree Form -->
+
+                        <form
+                            id="contactForm"
+                            action="https://formspree.io/f/xaeybzdn"
+                            method="POST"
+                        >
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Your Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Enter your name"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Your Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="subject">
+                                    Subject
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="subject"
+                                    name="subject"
+                                    placeholder="What is this about?"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="message">
+                                    Message
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="6"
+                                    placeholder="Tell me about your project..."
+                                    required
+                                ></textarea>
+
+                            </div>
+
+
+                            <!-- Hidden Formspree fields -->
+
+                            <input
+                                type="hidden"
+                                name="_subject"
+                                value="New Portfolio Contact — Hamad Ahmad Ghalib"
+                            >
+
+
+                            <button
+                                type="submit"
+                                class="form-submit"
+                                id="submitButton"
+                            >
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+
+
+                            <div
+                                id="formStatus"
+                                class="form-status"
+                                aria-live="polite"
+                            ></div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    <span>H</span>
+                    <strong>Hamad</strong>
+                </a>
+
+                <p>
+                    Building digital experiences with code & creativity.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <a
+                    href="https://github.com/hammadahmedghalib"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="mailto:ha8137915@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear"></span>
+                Hamad Ahmad Ghalib. All rights reserved.
+            </p>
+
+            <span>
+                Designed & Built with ♥
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- BACK TO TOP -->
+
+    <button
+        id="backToTop"
+        class="back-to-top"
+        aria-label="Back to top"
+    >
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 </html>
-```
